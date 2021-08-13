@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Libreria "Il Calamaio Stregato"</title>
+    <script src="https://kit.fontawesome.com/ac69570f7a.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="es_week7.js"></script>
+    <link rel="stylesheet" type="text/css" href="C:\Users\princ\OneDrive\Desktop\Esercitazione_NegozioLibri\style.css" />
+
+</head>
+<body>
+    <div class="container" style="width: 900px; background-color: #f8f9fa">
+        <div class="row">
+            <div class="col-12">
+                <header><p align="center"><img src="C:\Users\princ\OneDrive\Desktop\Esercitazione_NegozioLibri\images\logo.png" alt="logo" style="width:600px"></p></header>
+            </div>
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="home.html">
+                            <img src="C:\Users\princ\OneDrive\Desktop\Esercitazione_NegozioLibri\images\icona.png" alt="" width="50" height="50">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="home.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="order.html"><b>Ordini</b></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="newsletter.html">Newsletter</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <main>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Genere</th>
+                                <th scope="col">Titolo</th>
+                                <th scope="col">Autore</th>
+                                <th scope="col">Anno Uscita</th>
+                                <th scope="col">Editore</th>
+                                <th scope="col">Prezzo</th>
+                                <th scope="col">Quantità</th>
+                                <th scope="col">Check</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="col">Fantasy</th>
+                                <td>Le Tre Pietre</td>
+                                <td>Flavia Bujor</td>
+                                <td>2002</td>
+                                <td>Sonzogno</td>
+                                <td>8€</td>
+                                <td>
+                                    <input type='text' name='qnt' id='qnt' value="" />
+                                </td>
+                                <td><input type="checkbox" value='5' id="check" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Storico</th>
+                                <td>L'architettrice</td>
+                                <td>Melania G. Mazzucco</td>
+                                <td>2019</td>
+                                <td>Einaudi </td>
+                                <td>20.50€</td>
+                                <td>
+                                    <input type='text' name='qnt' id='qnt' value="" />
+                                </td>
+                                <td><input type="checkbox" value='20.50' id="check" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Horror</th>
+                                <td>It</td>
+                                <td>Stephen King</td>
+                                <td>1986</td>
+                                <td>SPERLING & KUPFER</td>
+                                <td>17,94€</td>
+                                <td>
+                                    <input type='text' name='qnt' id='qnt' value="" />
+                                </td>
+                                <td><input type="checkbox" value='17.94' id="check" /></td>
+                            </tr>
+                            <tr>
+                                <th scope="col">Fantasy</th>
+                                <td>Il Silmarillion</td>
+                                <td>J.R.R. Tolkien</td>
+                                <td>1977</td>
+                                <td>Bompiani </td>
+                                <td>12,82€</td>
+                                <td>
+                                    <input type='text' name='qnt' id='qnt' value="" />
+                                </td>
+                                <td><input type="checkbox" value='12.82' id="check" /></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn btn-warning" onclick="javascript:calcolaConto()">Calcola Conto</div>
+                    <span id="totaleConto">-</span>
+                </main>
+            </div>
+        </div>
+        <div class="row">
+            &nbsp;
+            <hr />
+            <div class="col-12"><footer> &copy; 2021 - Il Calamaio Stregato</footer></div>
+        </div>
+    </div>
+</body>
+</html>

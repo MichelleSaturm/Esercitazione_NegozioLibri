@@ -1,0 +1,16 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+    background-image: url('images/back.png');
+}
+.btnReservation {
+    border: 3px double red;
+    background-color: crimson;
+    color: white;
+    margin: 10px;
+}
+
+#totaleConto {
+    font-weight: bold;
+    color: brown;
+}
