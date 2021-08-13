@@ -3,14 +3,21 @@ body {
     background-color: #f8f9fa;
     background-image: url('images/back.png');
 }
-.btnReservation {
-    border: 3px double red;
-    background-color: crimson;
-    color: white;
-    margin: 10px;
+
+h1 {
+    font-size: 30px;
 }
 
+    h1::first-letter {
+        font-family: 'Monotype Corsiva';
+        font-size: 50px;
+    }
+
+footer {
+    text-align: center;
+    font-size: 12px;
+}
 #totaleConto {
     font-weight: bold;
-    color: brown;
+    color: blue;
 }

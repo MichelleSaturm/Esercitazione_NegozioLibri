@@ -22,7 +22,7 @@ function calcolaConto() {
     totale.innerText = '';
     let importoTotale = 0;
     for (let i = 0; i < libri.length; i++) {
-        let prezzo = parseFloat(libri[i].value) * qnt[0].value;
+        let prezzo = parseFloat(libri[i].value) * qnt.value;
         importoTotale += prezzo;
     }
 

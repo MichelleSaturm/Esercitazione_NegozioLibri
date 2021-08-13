@@ -19,7 +19,7 @@
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="home.html">
-                            <img src="C:\Users\princ\OneDrive\Desktop\Esercitazione_NegozioLibri\images\icona.png" alt="" width="50" height="50">
+                            <img src="C:\Users\princ\OneDrive\Desktop\Esercitazione_NegozioLibri\images\icona.png" alt="" width="90" height="90">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -27,28 +27,29 @@
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="home.html">Home</a>
+                                    <a class="nav-link" href="home.html"><i class="fas fa-home"></i> Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="order.html"><b>Ordini</b></a>
+                                    <a class="nav-link active" aria-current="page" href="order.html"><i class="fas fa-shopping-cart"></i> <b>Ordini</b></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="newsletter.html">Newsletter</a>
+                                    <a class="nav-link" href="newsletter.html"><i class="fas fa-newspaper"></i> Newsletter</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="aboutus.html">About Us</a>
+                                    <a class="nav-link" href="aboutus.html"><i class="fas fa-house-user"></i> About Us</a>
                                 </li>
                             </ul>
                         </div>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
                         </form>
                     </div>
                 </nav>
             </div>
         </div>
         <div class="row">
+            <div class="col-12"><h1>Ordina un libro</h1></div>
             <div class="col-12">
                 <main>
                     <table class="table">
@@ -73,9 +74,21 @@
                                 <td>Sonzogno</td>
                                 <td>8€</td>
                                 <td>
-                                    <input type='text' name='qnt' id='qnt' value="" />
+                                    <select name="quantità" id="qnt" size="1">
+                                        <option value="">-- Scegli Quantità --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
                                 </td>
-                                <td><input type="checkbox" value='5' id="check" /></td>
+                                <td><input type="checkbox" value='8' id="check" /></td>
                             </tr>
                             <tr>
                                 <th scope="col">Storico</th>
@@ -83,11 +96,23 @@
                                 <td>Melania G. Mazzucco</td>
                                 <td>2019</td>
                                 <td>Einaudi </td>
-                                <td>20.50€</td>
+                                <td>20€</td>
                                 <td>
-                                    <input type='text' name='qnt' id='qnt' value="" />
+                                    <select name="quantità" id="qnt" size="1">
+                                        <option value="">-- Scegli Quantità --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
                                 </td>
-                                <td><input type="checkbox" value='20.50' id="check" /></td>
+                                <td><input type="checkbox" value='20' id="check" /></td>
                             </tr>
                             <tr>
                                 <th scope="col">Horror</th>
@@ -95,11 +120,23 @@
                                 <td>Stephen King</td>
                                 <td>1986</td>
                                 <td>SPERLING & KUPFER</td>
-                                <td>17,94€</td>
+                                <td>17€</td>
                                 <td>
-                                    <input type='text' name='qnt' id='qnt' value="" />
+                                    <select name="quantità" id="qnt" size="1">
+                                        <option value="">-- Scegli Quantità --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
                                 </td>
-                                <td><input type="checkbox" value='17.94' id="check" /></td>
+                                <td><input type="checkbox" value='17' id="check" /></td>
                             </tr>
                             <tr>
                                 <th scope="col">Fantasy</th>
@@ -107,15 +144,27 @@
                                 <td>J.R.R. Tolkien</td>
                                 <td>1977</td>
                                 <td>Bompiani </td>
-                                <td>12,82€</td>
+                                <td>12€</td>
                                 <td>
-                                    <input type='text' name='qnt' id='qnt' value="" />
+                                    <select name="quantità" id="qnt" size="1">
+                                        <option value="">-- Scegli Quantità --</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
                                 </td>
-                                <td><input type="checkbox" value='12.82' id="check" /></td>
+                                <td><input type="checkbox" value='12' id="check" /></td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="btn btn-warning" onclick="javascript:calcolaConto()">Calcola Conto</div>
+                    <div class="btn btn-info" onclick="javascript:calcolaConto()"><i class="fas fa-calculator"></i> Calcola Conto</div>
                     <span id="totaleConto">-</span>
                 </main>
             </div>
@@ -123,7 +172,7 @@
         <div class="row">
             &nbsp;
             <hr />
-            <div class="col-12"><footer> &copy; 2021 - Il Calamaio Stregato</footer></div>
+            <div class="col-12"><footer> &copy; 2021 - Il Calamaio Stregato || Sede legale e amministrativa Via Fasulla, 123 09901 Springfield - C.F. e P.I. 01225670763</footer></div>
         </div>
     </div>
 </body>
